@@ -34,10 +34,6 @@ quartex.minimize();
 
 ---
 
-### Functionality
-- Ensures that the application window is active and ready to receive input.
-- Can be used when switching between multiple applications.
-
 ## 3. `quartex.togglefullscreen()`
 
 ### Description
@@ -51,6 +47,8 @@ quartex.togglefullscreen();
 ### Functionality
 - Switches the application to full screen if currently windowed, and vice versa.
 - Enhances the user experience for applications that benefit from immersive displays.
+
+---
 
 ## 4. `quartex.setwindowopacity({ value })`
 
@@ -71,6 +69,25 @@ quartex.setwindowopacity({ value: 0.5 }); // Set opacity to 50%
 
 ---
 
+## 5. `quartex.notify(message)`
+
+### Description
+Displays a notification to the user with the provided message.
+
+### Usage
+```javascript
+quartex.notify("Your notification message here");
+```
+
+### Parameters
+- **message** (string): The text message to be displayed in the notification.
+
+### Functionality
+- Shows a notification in the system tray or notification center, alerting the user to important information or events.
+- Can be utilized for reminders, alerts, or any relevant updates to enhance user interaction.
+
+---
+
 ## Example Usage
 Here is an example demonstrating how to utilize these commands in a script:
 
@@ -80,5 +97,8 @@ function executeCommands() {
   quartex.minimize();
   quartex.togglefullscreen();
   quartex.setwindowopacity({ value: 0.75 });
+  quartex.notify("Welcome to Quartex!"); // Display a welcome notification
 }
 ```
+
+---
